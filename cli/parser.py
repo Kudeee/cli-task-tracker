@@ -20,7 +20,6 @@ commands = {
 
 def parse_command():
     cmd_args = sys.argv[1:]
-    print([i for i in enumerate(cmd_args)])
 
     if not cmd_args:
         return SystemExit(USAGE)
@@ -31,7 +30,6 @@ def parse_command():
         return SystemExit(f"command '{command}' is not a valid command!\n{USAGE}")
 
     lowest, highest = commands[command]
-    print(f"low:{lowest}, high: {highest}, arg length: {len(argument)}")
 
     if len(argument) < lowest or len(argument) > highest:
         return SystemExit(USAGE)
