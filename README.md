@@ -71,13 +71,13 @@ python main.py delete 1
 ### Mark a task as in progress
 
 ```bash
-python main.py mark-in-progress 1
+python main.py status 1
 ```
 
 ### Mark a task as done
 
 ```bash
-python main.py mark-done 1
+python main.py status 2
 ```
 
 ### List all tasks
